@@ -91,7 +91,7 @@ const HomePage = () => {
 </div>
 
 <div className="px-10 py-10 mt-10 patterns md:px-28 min-h-96 ">
-  <p className="p-10 text-3xl text-center text-orange-400">Customer Reviews</p>
+  <p className="p-10 text-3xl text-center text-orange-400">Customer Reviews and</p>
    <div className="grid grid-cols-1 gap-5 py-5 md:grid-cols-3">
      <div className="flex flex-col">
        <div className="p-10 overflow-hidden bg-white drop-shadow-md h-80">
