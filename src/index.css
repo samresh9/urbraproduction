@@ -24,13 +24,15 @@
 }
 
 .cont:hover img {
-  opacity: 0.9;
+  opacity: 0.5;
+  transition: 2s;
 }
 .cont:hover .middle {
   opacity: 1;
+
   transition: 1s ease;
 }
 
 .about {
-  background-image: url("image/tomato\ \(Small\).png");
+  background-image: url("image/door.jpg");
 }

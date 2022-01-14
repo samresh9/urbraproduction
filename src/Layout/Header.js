@@ -17,9 +17,9 @@ const Header = () => {
   return (
     <div>
       {/* <!--header--> */}
-      <div className="h-10">6544654646</div>
-      <div className=" flex  flex-col h-20 ">
-        <div className="z-40 w-full p-5 pb-6 patterns2 shadow-md ">
+
+      <div className="flex flex-col h-20 ">
+        <div className="z-40 w-full p-5 pb-6 shadow-md patterns2">
           <div className="flex items-center justify-center gap-10 font-medium ">
             {/* <!--logo--> */}
             <div>

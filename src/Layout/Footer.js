@@ -7,13 +7,13 @@ import logo from "../image/logo.jpg";
 const Footer = () => {
   return (
     <div>
-      <div className=" p-5 md:px-20 md:py-10 patterns2 ">
+      <div className="p-5 md:px-20 md:py-10 patterns2">
         <div className="grid justify-between grid-cols-1 gap-5 md:grid-cols-4">
           <div className="flex flex-col items-center">
             <div>
               <img src={logo} alt="logo" className="object-center " />
             </div>
-            <p className="flex flex-wrap">
+            <p className="flex flex-wrap text-justify">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Necessitatibus voluptate culpa labore nobis placeat nulla autem
               perferendis incidunt! Quae distinctio delectus deleniti ratione
@@ -21,14 +21,16 @@ const Footer = () => {
             </p>
           </div>
           <div>
-            <div className="flex flex-col gap-5">
-              <div className="text-lg font-medium text-center">Contact US</div>
-              <div className="flex flex-row gap-5 justify-center items-center">
+            <div className="text-lg font-medium text-center pb-7">
+              Contact US
+            </div>
+            <div className="flex flex-col gap-5 px-10 lg:items-start">
+              <div className="flex flex-row gap-5">
                 <div>
                   {" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-8 w-8"
+                    className="w-8 h-8"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -47,16 +49,16 @@ const Footer = () => {
                     />
                   </svg>
                 </div>
-                <div className="font-medium">
-                  Doleshwor, Suryabinayak-9, Bhaktapur
+                <div className=" text-md">
+                  Doleshwor, Suryabinayak, Bhaktapur
                 </div>
               </div>
-              <div className="flex flex-row gap-5 justify-center items-center">
+              <div className="flex flex-row gap-5">
                 <div className="text-red">
                   {" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-8 w-8"
+                    className="w-8 h-8"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -69,9 +71,29 @@ const Footer = () => {
                     />
                   </svg>
                 </div>
-                <div className="text-red-800 font-medium text-2xl">
+                <div className="text-2xl font-medium text-red-800">
                   9855685322,998946512
                 </div>
+              </div>
+              <div className="flex flex-row gap-5">
+                <div className="text-red">
+                  {" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-8 h-8"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
+                  </svg>
+                </div>
+                <div className="">urbarateam@gmail.com.np</div>
               </div>
             </div>
           </div>

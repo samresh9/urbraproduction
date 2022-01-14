@@ -5,7 +5,7 @@ const About = () => {
   return (
     <>
       <div>
-        <div className="w-full about bg-right bg-cover h-72 md:bg-center saturate-50">
+        <div className="w-full bg-right bg-cover about h-72 md:bg-center saturate-50">
           <p className="absolute text-5xl font-bold transform -translate-x-1/2 -translate-y-1/2 font-next top-1/2 left-1/2 text-light">
             About US
           </p>

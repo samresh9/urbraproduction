@@ -1,15 +1,16 @@
 import React, { useEffect } from "react";
 import coffe from "../image/coffee-min.png";
-import background from "../image/home.JPG";
-
+import cafe from "../image/cafe.png";
+import tunnel from "../image/tunnel.jpg";
+import animal from "../image/animal.jpg";
 const HomePage = () => {
   return (
     <div>
       {/* <!--welcome--> */}
-      <div className=" home flex flex-col h-screen bg-fixed bg-center bg-cover "></div>
+      <div className="flex flex-col h-screen bg-fixed bg-center bg-cover home"></div>
       <div className="w-full px-10 py-20 h-90 md:px-24">
         <div className="flex flex-col items-center justify-between gap-20 overflow-hidden md:flex-row ">
-          <div className="mt-5 text-6xl font-medium font-luxury text-orange-400 w-1/3">
+          <div className="w-1/3 mt-5 text-6xl font-medium text-orange-400 font-luxury">
             Welcome <p className="text-black font-next">to our hotel</p>
           </div>
           <div>
@@ -27,22 +28,22 @@ const HomePage = () => {
 
       {/* <!--GALLERY--> */}
       <div className="overflow-hidden md:min-h-96 lg:h-screen ">
-        <p className="p-5  text-8xl text-center font-luxury tracking-wide text-orange-400 font-semibold opacity-75">
+        <div className="p-5 font-medium tracking-wide text-center text-orange-400 opacity-75 min-h-40 bg-slate-100 text-8xl font-luxury">
           Why Choose Urbara?
-        </p>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:h-3/4 md:mb-10">
-          <div className="cont relative w-full lg:h-full ">
+          <div className="relative w-full cont lg:h-full ">
             <img
               id="hov"
               className="object-cover h-full "
               alt="#"
               src={coffe}
             />
-            <div className="absolute text-2xl top-1 transform -translate-x-1/2 font-bold text-slate-100 left-1/2">
+            <div className="absolute text-2xl font-bold transform -translate-x-1/2 top-1 text-slate-100 left-1/2">
               Coffee
             </div>
-            <div className="middle opacity-0 text-center absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+            <div className="absolute text-center transform -translate-x-1/2 -translate-y-1/2 opacity-0 middle top-1/2 left-1/2">
               <div className="bg-red-200">
                 Made with beans produced in our garden
               </div>
@@ -54,21 +55,21 @@ const HomePage = () => {
             </p>
             <img
               id="hov"
-              className="object-cover h-full  "
+              className="object-cover h-full "
               alt="#"
-              src={coffe}
+              src={tunnel}
             />
           </div>
           <div className="w-full md:h-full">
             <img
               id="hov"
-              className="object-cover h-full "
+              className="object-cover object-bottom h-full "
               alt="#"
-              src={coffe}
+              src={cafe}
             />
           </div>
           <div className="w-full md:h-full">
-            <img className="object-cover h-full" alt="#" src={coffe} />
+            <img className="object-cover h-full" alt="#" src={animal} />
           </div>
         </div>
       </div>
@@ -132,7 +133,7 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-          <div className="  lg:col-span-2 lg:row-span-2">
+          <div className=" lg:col-span-2 lg:row-span-2">
             <div className="flex flex-col items-center w-full mx-auto"></div>{" "}
           </div>
           <div>
@@ -197,10 +198,10 @@ const HomePage = () => {
       </div>
 
       <div className="px-10 py-10 mt-10 patterns md:px-28 min-h-96 ">
-        <p className="p-10 text-7xl font-medium text-center font-next text-orange-400">
+        <p className="p-10 font-medium text-center text-orange-400 text-7xl font-next">
           Customer Reviews
         </p>
-        <div className="grid grid-cols-1 gap-5 py-5  lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-5 py-5 lg:grid-cols-3">
           <div className="flex flex-col">
             <div className="p-10 overflow-hidden bg-white drop-shadow-md h-80">
               <p>*****</p>
