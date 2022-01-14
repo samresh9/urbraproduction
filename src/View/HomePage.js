@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import coffe from "../image/coffee-min.png";
 import background from "../image/home.JPG";
 
@@ -9,7 +9,7 @@ const HomePage = () => {
       <div className=" home flex flex-col h-screen bg-fixed bg-center bg-cover "></div>
       <div className="w-full px-10 py-20 h-90 md:px-24">
         <div className="flex flex-col items-center justify-between gap-20 overflow-hidden md:flex-row ">
-          <div className="mt-5 text-5xl font-luxury">
+          <div className="mt-5 text-6xl font-medium font-luxury text-orange-400 w-1/3">
             Welcome <p className="text-black font-next">to our hotel</p>
           </div>
           <div>
@@ -26,13 +26,13 @@ const HomePage = () => {
       </div>
 
       {/* <!--GALLERY--> */}
-      <div className="overflow-hidden md:h-screen ">
-        <p className="p-5 text-5xl text-center font-luxury">
+      <div className="overflow-hidden md:min-h-96 lg:h-screen ">
+        <p className="p-5  text-8xl text-center font-luxury tracking-wide text-orange-400 font-semibold opacity-75">
           Why Choose Urbara?
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 md:h-3/4">
-          <div className="cont relative w-full md:h-full ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:h-3/4 md:mb-10">
+          <div className="cont relative w-full lg:h-full ">
             <img
               id="hov"
               className="object-cover h-full "
@@ -72,8 +72,8 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <div className="px-10 h-96 md:px-28 ">
-        <div className="grid grid-cols-1 gap-5 md:grid-cols-4">
+      <div className="px-10 md:py-10 min-h-96 lg:px-28 ">
+        <div className="grid grid-cols-1 gap-5 lg:grid-cols-4">
           <div>
             <div className="flex flex-row items-center gap-5">
               <div className="">
@@ -132,7 +132,7 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-          <div className="hidden md:block md:col-span-2 md:row-span-2">
+          <div className="  lg:col-span-2 lg:row-span-2">
             <div className="flex flex-col items-center w-full mx-auto"></div>{" "}
           </div>
           <div>
@@ -197,10 +197,10 @@ const HomePage = () => {
       </div>
 
       <div className="px-10 py-10 mt-10 patterns md:px-28 min-h-96 ">
-        <p className="p-10 text-3xl text-center text-orange-400">
-          Customer Reviews and
+        <p className="p-10 text-7xl font-medium text-center font-next text-orange-400">
+          Customer Reviews
         </p>
-        <div className="grid grid-cols-1 gap-5 py-5 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-5 py-5  lg:grid-cols-3">
           <div className="flex flex-col">
             <div className="p-10 overflow-hidden bg-white drop-shadow-md h-80">
               <p>*****</p>

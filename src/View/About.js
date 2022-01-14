@@ -1,10 +1,11 @@
 import React from "react";
+import coffe from "../image/coffee-min.png";
 
 const About = () => {
   return (
     <>
       <div>
-        <div className="w-full bg-right bg-cover h-72 md:bg-center saturate-50">
+        <div className="w-full about bg-right bg-cover h-72 md:bg-center saturate-50">
           <p className="absolute text-5xl font-bold transform -translate-x-1/2 -translate-y-1/2 font-next top-1/2 left-1/2 text-light">
             About US
           </p>
@@ -21,13 +22,13 @@ const About = () => {
             dolorem est pariatur eos aspernatur repellat voluptate autem fugiat!
             Fuga aliquam dolorum architecto magnam neque iure blanditiis, error
             asperiores.
-            <p>
+            <p className="my-4">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
               sint iusto fugit veritatis maxime quas nostrum cupiditate vero rem
               culpa consequatur explicabo molestias necessitatibus voluptas nam,
               nisi omnis eligendi voluptate.
             </p>
-            <p>
+            <p className="my-2">
               Set green given greater grass unto living creeping it bearing. Saw
               firmament whales let given given all behold multiply dominion from
               moving fruitful replenish meat there image she’d for fish, after
@@ -42,8 +43,8 @@ const About = () => {
               night was.
             </p>
           </div>
-          <div className="rounded-md">
-            <img src="/image/coffee-min_11zon.png" />
+          <div className="mt-2">
+            <img alt="#" src={coffe} />
           </div>
         </div>
       </div>
