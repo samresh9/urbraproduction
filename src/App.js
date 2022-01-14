@@ -1,5 +1,5 @@
 import React from "react";
-import { HomePage, About, Map, Contact } from "./View";
+import { HomePage, About, Map, Contact, FirebaseData } from "./View";
 import Layout from "./Layout/Layout";
 import { Route, Routes } from "react-router-dom";
 
@@ -40,6 +40,15 @@ const App = () => {
           element={
             <Layout>
               <Contact />
+            </Layout>
+          }
+        />
+        <Route
+          exact
+          path="/data"
+          element={
+            <Layout>
+              <FirebaseData />
             </Layout>
           }
         />

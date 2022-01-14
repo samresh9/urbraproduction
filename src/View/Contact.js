@@ -1,6 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import phone from "../image/phone.png";
+
+import { db } from "../utility/firebase-config";
+import { collection, addDoc } from "firebase/firestore";
+
 const Contact = () => {
+  //initialize form data
+  const [firstname, setFirstname] = useState("");
+  const [lastname, setLastname] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [number, setNumber] = useState("");
+
+  const usersCollectionRef = collection(db, "form");
+
+  const createUser = (e) => {
+    e.preventDefault();
+    if (!email && !number && !firstname && !lastname && !message) {
+      alert("Please fill the data");
+    } else {
+      addDoc(usersCollectionRef, {
+        firstname: firstname,
+        lastname: lastname,
+        email: email,
+        message: message,
+        number: number,
+      });
+    }
+
+    setFirstname("");
+    setLastname("");
+    setEmail("");
+    setNumber("");
+    setMessage("");
+  };
+
   return (
     <div>
       {/*get in touch */}
@@ -38,6 +72,10 @@ const Contact = () => {
                   id="grid-first-name"
                   type="text"
                   placeholder="Your Name"
+                  value={firstname}
+                  onChange={(event) => {
+                    setFirstname(event.target.value);
+                  }}
                 />
               </div>
               <div className="w-full md:w-1/2 px-3">
@@ -51,7 +89,10 @@ const Contact = () => {
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="grid-last-name"
                   type="text"
-                  placeholder="Doe"
+                  value={lastname}
+                  onChange={(event) => {
+                    setLastname(event.target.value);
+                  }}
                 />
               </div>
             </div>
@@ -67,8 +108,31 @@ const Contact = () => {
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="email"
                   type="email"
+                  value={email}
+                  onChange={(event) => {
+                    setEmail(event.target.value);
+                  }}
                 />
-                <p className="text-gray-600 text-xs italic">Please use @</p>
+                <p className="text-gray-600 text-xs italic mb-8">
+                  Please use @
+                </p>
+              </div>
+              <div className="w-full md:w-1/2 px-3">
+                <label
+                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  for="grid-last-name"
+                >
+                  Phone Number
+                </label>
+                <input
+                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  id="grid-last-name"
+                  type="text"
+                  value={number}
+                  onChange={(event) => {
+                    setNumber(event.target.value);
+                  }}
+                />
               </div>
             </div>
             <div className="flex flex-wrap -mx-3 mb-6">
@@ -82,6 +146,10 @@ const Contact = () => {
                 <textarea
                   className=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
                   id="message"
+                  value={message}
+                  onChange={(event) => {
+                    setMessage(event.target.value);
+                  }}
                 ></textarea>
               </div>
             </div>
@@ -90,6 +158,7 @@ const Contact = () => {
                 <button
                   className="shadow bg-slate-400 hover:bg-slate-300 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
                   type="button"
+                  onClick={createUser}
                 >
                   Send
                 </button>
