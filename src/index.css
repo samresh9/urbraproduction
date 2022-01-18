@@ -36,3 +36,6 @@
 .about {
   background-image: url("image/door.jpg");
 }
+body {
+  position: absolute;
+}

@@ -11,7 +11,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="w-full p-10 overflow-hidden min-h-72 md:p-28">
+      <div className="w-full p-5 overflow-hidden min-h-72 md:p-28">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 ">
           <div className="text-justify">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.

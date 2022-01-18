@@ -7,7 +7,7 @@ const HomePage = () => {
   return (
     <div>
       {/* <!--welcome--> */}
-      <div className="flex flex-col h-screen bg-fixed bg-center bg-cover home"></div>
+      <div className="flex flex-col w-full h-screen bg-fixed bg-center bg-cover home"></div>
       <div className="w-full px-10 py-20 h-90 md:px-24">
         <div className="flex flex-col items-center justify-between gap-20 overflow-hidden md:flex-row ">
           <div className="w-1/3 mt-5 text-6xl font-medium text-orange-400 font-luxury">
@@ -27,7 +27,7 @@ const HomePage = () => {
       </div>
 
       {/* <!--GALLERY--> */}
-      <div className="overflow-hidden md:min-h-96 lg:h-screen ">
+      <div className="w-full overflow-hidden md:min-h-96 lg:h-screen ">
         <div className="p-5 font-medium tracking-wide text-center text-orange-400 opacity-75 min-h-40 bg-slate-100 text-8xl font-luxury">
           Why Choose Urbara?
         </div>
@@ -201,7 +201,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="px-10 py-10 mt-10 patterns md:px-28 min-h-96 ">
+      <div className="w-full px-10 py-10 mt-10 patterns md:px-28 min-h-96">
         <p className="p-10 font-medium text-center text-orange-400 text-7xl font-next">
           Customer Reviews
         </p>
