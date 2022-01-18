@@ -69,7 +69,11 @@ const HomePage = () => {
             />
           </div>
           <div className="w-full md:h-full">
-            <img className="object-cover h-full" alt="#" src={animal} />
+            <img
+              className="object-cover object-center h-full"
+              alt="#"
+              src={animal}
+            />
           </div>
         </div>
       </div>

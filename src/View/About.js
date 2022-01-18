@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import coffe from "../image/coffee-min.png";
 
 const About = () => {

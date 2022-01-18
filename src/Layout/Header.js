@@ -7,7 +7,6 @@ const Header = () => {
     //grab mobile button
     const btn = document.querySelector("button.mobile-menu-button");
     const menu = document.querySelector(".mobile-menu");
-
     //
     btn.addEventListener("click", () => {
       menu.classList.toggle("hidden");
@@ -17,16 +16,15 @@ const Header = () => {
   return (
     <div>
       {/* <!--header--> */}
-
-      <div className="flex flex-col h-20 ">
-        <div className="z-40 w-full p-5 pb-6 shadow-md patterns2">
-          <div className="flex items-center justify-center gap-10 font-medium ">
+      <div className="   flex h-20 ">
+        <div className="     z-40 fixed top-0 w-full p-5 pb-6 shadow-md patterns2">
+          <div className="flex  items-center justify-center gap-10 font-medium ">
             {/* <!--logo--> */}
             <div>
               <img src={logo} alt="logo" />
             </div>
             {/* <!--menu--> */}
-            <ul className="hidden gap-10 md:flex">
+            <ul className=" hidden gap-10 md:flex">
               <li className="hover:underline ">
                 <Link to="/">HOME</Link>
               </li>
@@ -62,13 +60,17 @@ const Header = () => {
           </div>
           {/* <!--mobile menu--> */}
           <div>
-            <ul className="hidden leading-10 text-center md:hidden mobile-menu">
-              <li>HOME</li>
+            <ul className="  hidden  leading-10 text-center md:hidden mobile-menu ">
+              <li>
+                <Link to="/">HOME</Link>
+              </li>
               <li>GALLERY</li>
               <li className="hover:underline">
-                <a href="./about.html">ABOUT</a>
+                <Link to="/about">ABOUT</Link>
               </li>
-              <li>CONTACT</li>
+              <li>
+                <Link to="/contact">CONTACT</Link>
+              </li>
               <li>MAP</li>
             </ul>
           </div>

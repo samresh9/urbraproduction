@@ -32,6 +32,7 @@ const FirebaseData = () => {
               <h1>Firstname: {user.firstname}</h1>
               <h1>Lastname: {user.lastname}</h1>
               <h1>Email: {user.email}</h1>
+              <h1>Phone number: {user.number}</h1>
               <h1>Message: {user.message}</h1>
 
               <button
