@@ -24,13 +24,13 @@
 }
 
 .cont:hover img {
-  opacity: 0.5;
-  transition: 2s;
+  filter: grayscale(100%);
+  opacity: 0.9;
+  transition: 1s;
 }
 .cont:hover .middle {
   opacity: 1;
-
-  transition: 1s ease;
+  transition: 0.01s;
 }
 
 .about {

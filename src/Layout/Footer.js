@@ -7,7 +7,7 @@ import logo from "../image/logo.jpg";
 const Footer = () => {
   return (
     <div>
-      <div className="p-5 md:px-20 md:py-10 patterns2">
+      <div className="w-screen p-5 md:px-20 md:py-10 patterns2">
         <div className="grid justify-between grid-cols-1 gap-5 md:grid-cols-4">
           <div className="flex flex-col items-center">
             <div>
@@ -71,7 +71,7 @@ const Footer = () => {
                     />
                   </svg>
                 </div>
-                <div className="text-2xl font-medium text-red-800">
+                <div className="text-lg font-medium text-red-800 md:text-2xl">
                   9855685322,998946512
                 </div>
               </div>

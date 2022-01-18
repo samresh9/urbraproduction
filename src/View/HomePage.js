@@ -44,95 +44,102 @@ const HomePage = () => {
               Coffee
             </div>
             <div className="absolute text-center transform -translate-x-1/2 -translate-y-1/2 opacity-0 middle top-1/2 left-1/2">
-              <div className="bg-red-200">
+              <div className="text-lg font-medium text-orange-500 bg-transparent">
                 Made with beans produced in our garden
               </div>
             </div>
           </div>
-          <div className="relative w-full md:h-full ">
-            <p className="absolute text-2xl font-bold transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 text-slate-50">
-              FOOD
-            </p>
+          <div className="relative w-full cont lg:h-full ">
             <img
               id="hov"
               className="object-cover h-full "
               alt="#"
               src={tunnel}
             />
+            <div className="absolute text-2xl font-bold transform -translate-x-1/2 top-1 text-slate-100 left-1/2">
+              Organic Garden
+            </div>
+            <div className="absolute text-center transform -translate-x-1/2 -translate-y-1/2 opacity-0 middle top-1/2 left-1/2">
+              <div className="text-lg font-medium bg-transparent text-lime-300">
+                Made with beans produced in our garden
+              </div>
+            </div>
           </div>
-          <div className="w-full md:h-full">
+          <div className="relative w-full cont lg:h-full ">
+            <img id="hov" className="object-cover h-full " alt="#" src={cafe} />
+            <div className="absolute text-2xl font-bold transform -translate-x-1/2 top-1 text-slate-100 left-1/2">
+              Cafeteria
+            </div>
+            <div className="absolute text-center transform -translate-x-1/2 -translate-y-1/2 opacity-0 middle top-1/2 left-1/2">
+              <div className="text-lg font-medium text-orange-500 bg-transparent">
+                Made with beans produced in our garden
+              </div>
+            </div>
+          </div>
+          <div className="relative w-full cont lg:h-full ">
             <img
               id="hov"
-              className="object-cover object-bottom h-full "
-              alt="#"
-              src={cafe}
-            />
-          </div>
-          <div className="w-full md:h-full">
-            <img
-              className="object-cover object-center h-full"
+              className="object-cover h-full "
               alt="#"
               src={animal}
             />
+            <div className="absolute text-2xl font-bold transform -translate-x-1/3 top-1 text-slate-100 left-1/2">
+              <p>Animal Husbandary</p>
+            </div>
+            <div className="absolute text-center transform -translate-x-1/2 -translate-y-1/2 opacity-0 middle top-1/2 left-1/2">
+              <div className="text-lg font-medium text-orange-500 bg-transparent">
+                Made with beans produced in our garden
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div className="px-10 md:py-10 min-h-96 lg:px-28 ">
-        <div className="grid grid-cols-1 gap-5 lg:grid-cols-4">
-          <div>
-            <div className="flex flex-row items-center gap-5">
-              <div className="">
-                {" "}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-10 h-10 text-orange-500"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <p>
-                  {" "}
-                  <h1 className="text-3xl"> Peaceful Environment</h1>Lorem ipsum
-                  dolor sit, amet consectetur adipisicing elit. Dicta fugit
-                  adipisicing elit. Dicta fugit voluptate{" "}
-                </p>
-              </div>
+        <div className="grid items-start grid-cols-1 gap-5 lg:gap-10 lg:grid-cols-4">
+          <div className="flex flex-row gap-5">
+            <div className="">
+              {" "}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-10 h-10 text-orange-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h1 className="text-3xl"> Peaceful Environment</h1>Lorem ipsum
+              dolor sit, amet consectetur adipisicing elit. Dicta fugit
+              adipisicing elit. Dicta fugit voluptate labore Lorem
             </div>
           </div>
           <div>
-            <div className="flex flex-row items-center gap-5">
+            <div className="flex flex-row gap-5">
               <div className="">
                 {" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
                   className="w-10 h-10 text-orange-500"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+                  viewBox="0 0 16 16"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-                  />
+                  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zm9.954 3H2.545c-.3 0-.545.224-.545.5v1c0 .276.244.5.545.5h10.91c.3 0 .545-.224.545-.5v-1c0-.276-.244-.5-.546-.5zM11.5 7a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z" />
                 </svg>
               </div>
               <div>
                 <p>
                   {" "}
-                  <h1 className="text-3xl"> Peaceful Environment</h1>Lorem ipsum
-                  dolor sit, amet consectetur adipisicing elit. Dicta fugit
-                  adipisicing elit. Dicta fugit voluptate{" "}
+                  <h1 className="text-3xl"> Events</h1>Lorem ipsum dolor sit,
+                  amet{" "}
                 </p>
               </div>
             </div>
@@ -140,37 +147,36 @@ const HomePage = () => {
           <div className=" lg:col-span-2 lg:row-span-2">
             <div className="flex flex-col items-center w-full mx-auto"></div>{" "}
           </div>
-          <div>
-            <div className="flex flex-row items-center gap-5">
-              <div className="">
+
+          <div className="flex flex-row gap-5">
+            <div className="">
+              {" "}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-10 h-10 text-orange-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+            </div>
+            <div>
+              <p>
                 {" "}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-10 h-10 text-orange-500"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <p>
-                  {" "}
-                  <h1 className="text-3xl"> Peaceful Environment</h1>Lorem ipsum
-                  dolor sit, amet consectetur adipisicing elit. Dicta fugit
-                  adipisicing elit. Dicta fugit voluptate{" "}
-                </p>
-              </div>
+                <h1 className="text-3xl"> Seminar</h1>Lorem ipsum dolor sit,
+                amet consectetur adipisic . Dicta fugit voluptate{" "}
+              </p>
             </div>
           </div>
+
           <div>
-            <div className="flex flex-row items-center gap-5">
+            <div className="flex flex-row gap-5">
               <div className="">
                 {" "}
                 <svg
@@ -193,7 +199,7 @@ const HomePage = () => {
                   {" "}
                   <h1 className="text-3xl"> Peaceful Environment</h1>Lorem ipsum
                   dolor sit, amet consectetur adipisicing elit. Dicta fugit
-                  adipisicing elit. Dicta fugit voluptate{" "}
+                  adipisicing{" "}
                 </p>
               </div>
             </div>
@@ -202,7 +208,7 @@ const HomePage = () => {
       </div>
 
       <div className="w-full px-10 py-10 mt-10 patterns md:px-28 min-h-96">
-        <p className="p-10 font-medium text-center text-orange-400 text-7xl font-next">
+        <p className="p-10 text-2xl font-medium text-center text-orange-400 md:text-5xl lg:text-7xl font-next">
           Customer Reviews
         </p>
         <div className="grid grid-cols-1 gap-5 py-5 lg:grid-cols-3">
